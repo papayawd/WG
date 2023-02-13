@@ -1,0 +1,33 @@
+Steam
+账户：papayawd
+密码：Papayawd@
+
+-insecure 启动项
+
+修改休闲游戏时长
+mp_roundtime_defuse 60
+
+允许作弊
+sv_cheats 1
+
+AI 停止\允许 行动
+bot_stop 1\0
+
+修改自身血量
+ent_fire !self addoutput "health 30"
+
+
+所有人的位置信息 server.dll+B0B16C (9个float为一个单位)
+
+人物链表 client.dll+4DFFEF4 第一个是自己的
+坐标偏移 0xA0
+血量偏移 0x100
+阵营偏移 0xF4   2代表T  3代表CT
+
+鼠标角度 client.dll+4DF0AAC Y X
+
+视角矩阵 client.dll+4DF0E34
+	角度关于X轴的cos值 偏移（可能） 0x20
+	角度关于Y轴的cos值 偏移（可能） 0x24
+	角度关于Z轴的cos值 偏移（可能） 0x28
+
