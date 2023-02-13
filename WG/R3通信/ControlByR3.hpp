@@ -1,9 +1,9 @@
 
 #include <stdio.h>
+#include <psapi.h>
 #include <Windows.h>
 #include <Tlhelp32.h>
-#include <Windows.h>
-#include<psapi.h>
+
 
 
 class ControlByR3 {
